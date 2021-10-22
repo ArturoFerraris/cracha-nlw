@@ -3,14 +3,14 @@ const linksSocialMedia = {
   facebook: 'ferrarisarturo',
   instagram: 'arturoferraris',
   whatsapp: '5511969032192',
-  linkedin: 'arturoferraris'
+  linkedin: '/in/arturoferraris'
 }
 
 function changeSocialMediaLinks() {
   for (let li of socialLinks.children) {
     const social = li.getAttribute('class')
 
-    li.children[0].href = `https://${social}.com/${linksSocialMedia[social]}`
+    li.children[1].href = `https://${social}.com/${linksSocialMedia[social]}`
   }
 }
 
